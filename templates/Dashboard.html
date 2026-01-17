@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to the Score Prediction Dashboard</h1>
+    <div class="Dashboard">
+        <h2>Predict Your Score</h2>
+        <form method="post">
+             <input name="physics" type="number" placeholder="Physics Hours" required><br>
+            <input name="chemistry" type="number" placeholder="Chemistry Hours" required><br>
+            <input name="maths" type="number" placeholder="Maths Hours" required><br>
+            <input name="english" type="number" placeholder="English Hours" required><br>
+            <input name="biology" type="number" placeholder="Biology Hours" required><br>
+            <button type="submit">Predict Score</button>
+            <div id="result">Predicted Total Score: {{ score }}</div>
+        
+        </form>
+
+    </div>
+</body>
+</html>
