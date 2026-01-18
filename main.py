@@ -20,7 +20,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 model = LinearRegression()
 
 # FITTING THE MODEL
-model.fit(x_train, y_train)
+model.fit(x_train, y_train)#model fit
 
 @app.route('/',methods=['GET','POST'])
 def about():
